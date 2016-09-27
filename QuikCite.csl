@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0">
+  <info>
+    <title>QuikCite</title>
+    <id>https://github.com/maxsu/QuikCite</id>
+    <author>
+      <name>maxsu</name>
+    </author>
+    <category citation-format="numeric"/>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</rights>
+  </info>
+  <locale xml:lang="en"/>
+
+  <citation>
+    <layout delimiter=", ">
+      <text variable="citation-number" prefix="[" suffix="]"/>
+    </layout>
+  </citation>
+
+  <bibliography>
+    <layout>
+      <text variable="citation-number" prefix="[" suffix="] "/>
+      <names variable="author" delimiter="," suffix=", ">
+        <name form="short"/>
+      </names>
+      <text variable="title" prefix="&quot;" suffix=",&quot;"/>
+      <date date-parts="year" form="numeric" variable="issued" prefix=" " suffix="."/>
+      <text variable="URL" prefix=" "/>
+    </layout>
+  </bibliography>
+</style>
